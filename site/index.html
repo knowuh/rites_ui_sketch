@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Partial Testing</title>
+    <link href="stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/><link href="stylesheets/ncolor.css" media="all" rel="stylesheet" type="text/css"/><link href="stylesheets/tabs.css" media="all" rel="stylesheet" type="text/css"/>
+    <script language="javascript" src="javascripts/prototype.js" type="text/javascript"></script><script language="javascript" src="javascripts/effects.js" type="text/javascript"></script><script language="javascript" src="javascripts/dragdrop.js" type="text/javascript"></script><script language="javascript" src="javascripts/tiny_mce/tiny_mce.js" type="text/javascript"></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        window.onload = function() {
+               Sortable.create('sortable',{tag:'fieldset'});
+               Sortable.create('sections',{tag:'li'});
+               Sortable.create('pages',{tag:'li',constraint:'horizontal'});
+           }
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div class='full_width'>
+        <h2>Page: Page 1</h2>
+        <p>
+          Description:
+          <em>in this lesson we make some mutants</em>
+        </p>
+        <p></p>
+        <div class='full_width'>
+          <div class='menu'>
+            <div class='menu_left'>
+              <ul class='sortable' id='sections'>
+                <li class='label'>
+                  Section:
+                </li>
+                <li>
+                  <a href='#'>Teacher Notes</a>
+                </li>
+                <li>
+                  <a href='#'>Introduction</a>
+                </li>
+                <li class='selected'>
+                  <a href='#'>Engagement</a>
+                </li>
+                <li>
+                  <a href='#'>Reflection</a>
+                </li>
+              </ul>
+            </div>
+            <div class='menu_right'>
+              <ul>
+                <li>
+                  <a href='#'>add</a>
+                </li>
+                <li>
+                  <a href='#' style='color: red'>
+                    <small>delete</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class='menu'>
+            <div class='menu_left'>
+              <ul class='sortable' id='pages'>
+                <li class='label'>
+                  Page:
+                </li>
+                <li class='selected'>
+                  <a href='#'>one</a>
+                </li>
+                <li>
+                  <a href='#'>two</a>
+                </li>
+                <li>
+                  <a href='#'>three</a>
+                </li>
+              </ul>
+            </div>
+            <div class='menu_right'>
+              <ul>
+                <li>
+                  <a href='#'>add</a>
+                </li>
+                <li>
+                  <a href='#' style='color: red'>
+                    <small>delete</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='full_width sortable' id='sortable'>
+          <fieldset id='Question 1'>
+            <legend>Question 1</legend>
+            <div class='menu'>
+              <div class='menu_right'>
+                <ul>
+                  <li>
+                    <a href='#'>edit</a>
+                  </li>
+                  <li>
+                    <a href='#'>show/hide</a>
+                  </li>
+                  <li>
+                    <a href='#' style='color: red'>
+                      <small>delete</small>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class='fixed_label'>
+              <label for='prompt'>prompt:</label>
+            </div>
+            <textarea id='prompt_Question 1' name='prompt' rows='6'>your prompt text goes here</textarea>
+            <br />
+            <div class='fixed_label'>
+              <label for='default_response'>Default Answer:</label>
+            </div>
+            <div class='field'>
+              <input id='default_response_Question 1' name='default_response' type='text' value='your_response' />
+            </div>
+          </fieldset>
+          <fieldset id='Question 2'>
+            <legend>Question 2</legend>
+            <div class='menu'>
+              <div class='menu_right'>
+                <ul>
+                  <li>
+                    <a href='#'>edit</a>
+                  </li>
+                  <li>
+                    <a href='#'>show/hide</a>
+                  </li>
+                  <li>
+                    <a href='#' style='color: red'>
+                      <small>delete</small>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class='fixed_label'>
+              <label for='prompt'>prompt:</label>
+            </div>
+            <textarea id='prompt_Question 2' name='prompt' rows='6'>your prompt text goes here</textarea>
+            <br />
+            <div class='fixed_label'>
+              <label for='default_response'>Default Answer:</label>
+            </div>
+            <div class='field'>
+              <input id='default_response_Question 2' name='default_response' type='text' value='your_response' />
+            </div>
+          </fieldset>
+          <fieldset id='Question 3'>
+            <legend>Question 3</legend>
+            <div class='menu'>
+              <div class='menu_right'>
+                <ul>
+                  <li>
+                    <a href='#'>edit</a>
+                  </li>
+                  <li>
+                    <a href='#'>show/hide</a>
+                  </li>
+                  <li>
+                    <a href='#' style='color: red'>
+                      <small>delete</small>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class='fixed_label'>
+              <label for='prompt'>prompt:</label>
+            </div>
+            <textarea id='prompt_Question 3' name='prompt' rows='6'>your prompt text goes here</textarea>
+            <br />
+            <div class='fixed_label'>
+              <label for='default_response'>Default Answer:</label>
+            </div>
+            <div class='field'>
+              <input id='default_response_Question 3' name='default_response' type='text' value='your_response' />
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

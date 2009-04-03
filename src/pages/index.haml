@@ -1,0 +1,14 @@
+- name = "Page 1"
+- description = "in this lesson we make some mutants"
+
+%h2= "Page: #{name}"
+%p
+  Description:
+  %em= description
+%p
+
+.full_width
+  =partial('section_navigator')
+#sortable.full_width.sortable
+  - 1.upto(3).each do |i|
+    = partial('item_box', { :item_name => "Question #{i}"})

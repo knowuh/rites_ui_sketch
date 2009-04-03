@@ -1,0 +1,63 @@
+!blueprint_grid_columns = 24
+!blueprint_grid_width = 30px
+!blueprint_grid_margin = 10px
+
+@import ncolor.sass
+@import tabs.sass
+@import compass/utilities
+@import blueprint/screen
+
+body
+  :font-family helvetica, verdana, arial, sans-serif
+  :color blue
+
+fieldset
+  :margin 0px
+    :bottom 1em
+    :top 1em
+  :padding 0px
+    :bottom 20px
+  :background-color #EEE
+textarea
+  +span(14)
+  :margin 2px
+input
+  +span(14)
+  :margin 2px
+#wrapper
+  +container
+  :font
+    :size 12pt
+  :padding 10px
+
+.menu
+  +column(24,true)
+  :font-size 10px
+  :margin 0px
+    :top 2px
+    :bottom 2px
+  :background-color #EEE
+  :padding 1px
+  .menu_left
+    :float left
+    +tabs
+    :text-align left
+  .menu_right
+    :float right
+    :text-align right
+    +tabs
+      
+.full_width
+  +column(24,true)
+
+.fixed_label
+  +column(4)
+  :text-align right
+  
+.field
+  +column(8)
+  :text-align left
+
+.sortable
+  :cursor move
+

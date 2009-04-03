@@ -1,0 +1,113 @@
+body {
+  font-family: helvetica, verdana, arial, sans-serif;
+  color: blue; }
+
+fieldset {
+  margin: 0px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 0px;
+  padding-bottom: 20px;
+  background-color: #EEE; }
+
+textarea {
+  width: 550px;
+  margin: 2px; }
+
+input {
+  width: 550px;
+  margin: 2px; }
+
+#wrapper {
+  width: 950px;
+  margin: 0 auto;
+  overflow: auto;
+  overflow: -moz-scrollbars-none;
+  display: inline-block;
+  font-size: 12pt;
+  padding: 10px; }
+  #wrapper {
+    display: block; }
+
+.menu {
+  float: left;
+  width: 950px;
+  margin-right: 0;
+  font-size: 10px;
+  margin: 0px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: #EEE;
+  padding: 1px; }
+  .menu .menu_left {
+    float: left;
+    text-align: left; }
+    .menu .menu_left ul {
+      margin: 0;
+      margin-bottom: 0.25em;
+      padding: 0em; }
+      .menu .menu_left ul li {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 10px; }
+        .menu .menu_left ul li a, .menu .menu_left ul li a:visited, .menu .menu_left ul li a:active {
+          cursor: pointer;
+          color: #111111;
+          font-weight: bold;
+          text-decoration: none; }
+        .menu .menu_left ul li a:hover {
+          color: white;
+          background-color: black; }
+      .menu .menu_left ul li.selected a, .menu .menu_left ul li.selected a:visited, .menu .menu_left ul li.selected a:active {
+        background-color: blue;
+        color: white; }
+      .menu .menu_left ul li.label {
+        font-weight: bold; }
+  .menu .menu_right {
+    float: right;
+    text-align: right; }
+    .menu .menu_right ul {
+      margin: 0;
+      margin-bottom: 0.25em;
+      padding: 0em; }
+      .menu .menu_right ul li {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 10px; }
+        .menu .menu_right ul li a, .menu .menu_right ul li a:visited, .menu .menu_right ul li a:active {
+          cursor: pointer;
+          color: #111111;
+          font-weight: bold;
+          text-decoration: none; }
+        .menu .menu_right ul li a:hover {
+          color: white;
+          background-color: black; }
+      .menu .menu_right ul li.selected a, .menu .menu_right ul li.selected a:visited, .menu .menu_right ul li.selected a:active {
+        background-color: blue;
+        color: white; }
+      .menu .menu_right ul li.label {
+        font-weight: bold; }
+
+.full_width {
+  float: left;
+  width: 950px;
+  margin-right: 0; }
+
+.fixed_label {
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+  text-align: right; }
+
+.field {
+  float: left;
+  width: 310px;
+  margin-right: 10px;
+  text-align: left; }
+
+.sortable {
+  cursor: move; }

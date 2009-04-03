@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Partial Testing
+    = stylesheets
+    = javascripts(:prototype, :effects, :dragdrop, 'tiny_mce/tiny_mce')
+    :javascript
+      window.onload = function() {
+             Sortable.create('sortable',{tag:'fieldset'});
+             Sortable.create('sections',{tag:'li'});
+             Sortable.create('pages',{tag:'li',constraint:'horizontal'});
+         }
+    
+  %body
+    #wrapper
+      .full_width  
+        = yield

@@ -1,0 +1,6 @@
+%ul
+  %li.label 
+    =label
+  - options.each do |option|
+    %li
+      %a{:href=> option[:url] || "#"}=(option[:label] || "mystery")

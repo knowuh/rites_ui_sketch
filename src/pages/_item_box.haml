@@ -1,0 +1,22 @@
+
+%fieldset{:id=>"#{item_name}"}
+  %legend="#{item_name}"
+  .menu
+    .menu_right
+      %ul
+        %li
+          %a{:href=>"#"} edit
+        %li 
+          %a{:href=>"#"} show/hide
+        %li
+          %a{:href=>"#", :style=>"color: red"} 
+            %small delete
+  .fixed_label
+    %label{:for => "prompt"} prompt:
+  %textarea{:name => "prompt", :id=>"prompt_#{item_name}", :rows=>"6"}
+    your prompt text goes here
+  %br
+  .fixed_label
+    %label{:for => "default_response"} Default Answer:
+  .field
+    %input{ :type=> "text",:name => "default_response", :value=>"your_response", :id=>"default_response_#{item_name}" }

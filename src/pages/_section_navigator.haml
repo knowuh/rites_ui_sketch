@@ -1,0 +1,39 @@
+.menu
+  .menu_left
+    %ul#sections.sortable
+      %li.label
+        Section:
+      %li
+        %a{:href=>"#"} Teacher Notes
+      %li 
+        %a{:href=>"#"} Introduction
+      %li.selected
+        %a{:href=>"#"} Engagement
+      %li 
+        %a{:href=>"#"} Reflection
+  .menu_right
+    %ul
+      %li
+        %a{:href=>"#"} add
+      %li
+        %a{:href=>"#", :style=>"color: red"} 
+          %small delete
+
+.menu
+  .menu_left
+    %ul#pages.sortable
+      %li.label 
+        Page:
+      %li.selected
+        %a{:href=>"#"} one
+      %li 
+        %a{:href=>"#"} two
+      %li 
+        %a{:href=>"#"} three
+  .menu_right
+    %ul
+      %li
+        %a{:href=>"#"} add
+      %li
+        %a{:href=>"#", :style=>"color: red"} 
+          %small delete
